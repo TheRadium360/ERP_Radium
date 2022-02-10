@@ -1,0 +1,7 @@
+:root {
+  --blue: #445ca9;
+  --pink: #f6a7d7;
+  --green: rgb(0, 142, 130);
+  --orange: #ff4713;
+  /* use =>     var(--blue)*/
+}

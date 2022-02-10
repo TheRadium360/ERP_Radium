@@ -1,0 +1,133 @@
+  @keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+
+    25% {
+      height: 0;
+      width: 10px;
+    }
+
+    50% {
+      height: 20px;
+      width: 10px;
+    }
+  }
+
+  :root {
+    --blue: #445ca9;
+    --pink: #f6a7d7;
+    --green: rgb(0, 142, 130);
+    --orange: #ff4713;
+    /* use =>     var(--blue)*/
+  }
+
+  .checkbox {
+    background-color: #fff;
+    display: inline-block;
+    height: 28px;
+    margin: 0 .25em;
+    width: 28px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    float: right
+  }
+
+  .checkbox span {
+    display: block;
+    height: 28px;
+    position: relative;
+    width: 28px;
+    padding: 0
+  }
+
+  .checkbox span:after {
+    -moz-transform: scaleX(-1) rotate(135deg);
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 4px solid #fff;
+    border-top: 4px solid #fff;
+    content: '';
+    display: block;
+    height: 20px;
+    left: 3px;
+    position: absolute;
+    top: 15px;
+    width: 10px
+  }
+
+  .checkbox span:hover:after {
+    border-color: #999
+  }
+
+  .checkbox input {
+    display: none
+  }
+
+  .checkbox input:checked+span:after {
+    -webkit-animation: check .8s;
+    -moz-animation: check .8s;
+    -o-animation: check .8s;
+    animation: check .8s;
+    border-color: #555
+  }
+
+  .checkbox input:checked+.default:after {
+    border-color: #444
+  }
+
+  .checkbox input:checked+.primary:after {
+    border-color: #2196F3
+  }
+
+  .checkbox input:checked+.success:after {
+    border-color: #8bc34a
+  }
+
+  .checkbox input:checked+.info:after {
+    border-color: #3de0f5
+  }
+
+  .checkbox input:checked+.warning:after {
+    border-color: #FFC107
+  }
+
+  .checkbox input:checked+.danger:after {
+    border-color: var(--green)
+  }
+
+  .list,
+  .list_head,
+  .list_val {
+    border: none !important;
+  }
+
+  .list_head {
+    /* background-color: rgba(0, 142, 130, 0.3); */
+    background-color: rgba(0, 142, 130, 0.6);
+    font-weight: bold;
+    color: white;
+  }
+
+  .submit_btn {
+    border: 1px solid var(--green) !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .submit_btn:hover {
+    background-color: var(--green) !important;
+  }
+
+  .fields_description {
+    color: rgba(68, 68, 68, 0.685);
+    font-size: 13px;
+  }
