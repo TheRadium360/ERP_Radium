@@ -48,3 +48,18 @@
 .back_to_dashboard:hover {
     color: var(--green);
 }
+.save_changes_btn,
+.upgrade_plan_btn,
+.cancel_plan_btn {
+    border: 1px solid var(--green);
+}
+
+.save_changes_btn:hover,
+.upgrade_plan_btn:hover,
+.cancel_plan_btn:hover {
+    color: white;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.bg-success {}
