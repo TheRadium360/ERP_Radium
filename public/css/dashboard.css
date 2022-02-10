@@ -1,0 +1,50 @@
+:root {
+    --blue: #445ca9;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #f6a7d7;
+    --red: #e74a3b;
+    --orange: #ff4713;
+    --yellow: #f6c23e;
+    --green: rgb(0, 142, 130);
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --primary: #4e73df;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.side_nav_area {
+    background-color: var(--green);
+}
+
+.search_btn {
+    background-color: var(--green) !important;
+}
+
+.generate_report_btn {
+    background-color: var(--green);
+}
+
+.back_to_dashboard {
+    color: var(--green);
+}
+
+.back_to_dashboard:hover {
+    color: var(--green);
+}
