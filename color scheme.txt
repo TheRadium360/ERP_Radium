@@ -1,2 +1,4 @@
-#eb2f5b     mahroon
-#1700a0     blue
+#279a8d     green
+#5268b4     blue
+#f1582c     orange
+#e1add3     pink
